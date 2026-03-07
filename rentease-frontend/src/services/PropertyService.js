@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://project61-1.onrender.com";
+const API_URL = "https://project61-1.onrender.com/api/properties";
 
 class PropertyService {
   getAllProperties() {
