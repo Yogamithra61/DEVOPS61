@@ -1,0 +1,86 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-container .spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #007bff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-container {
+    text-align: center;
+}
+
+.error-container .retry-button {
+    padding: 10px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.empty-container {
+    text-align: center;
+    font-size: 18px;
+}
+
+.property-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.property-table thead {
+    background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+    color: white;
+}
+
+.property-table th, .property-table td {
+    border: 1px solid #dee2e6;
+    padding: 8px;
+}
+
+.property-table th {
+    font-weight: bold;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.status-badge.available {
+    background-color: #28a745;
+}
+
+.status-badge.rented {
+    background-color: #ffc107;
+}
+
+.status-badge.unavailable {
+    background-color: #dc3545;
+}
+
+@media (max-width: 768px) {
+    .property-table {
+        display: block;
+        overflow-x: auto;
+    }
+    .property-table th, .property-table td {
+        display: block;
+        width: auto;
+    }
+}
