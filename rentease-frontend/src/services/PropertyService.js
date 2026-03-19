@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL + "/properties";
+const API_URL = "https://devops61.onrender.com/api/properties";
 
 class PropertyService {
   getAllProperties() {
